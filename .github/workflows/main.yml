@@ -5,7 +5,7 @@ name: SpringBoot kanban service
 on: # push operation is operate
   push:
     # here since my repository branch is named `main` , you should follow your own repository like `master`
-    branches: [main]
+    branches: [master]
 # CI enviroment settings
 env:
   STATE_RELEASE_VERSION: "1.0" # version
