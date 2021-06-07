@@ -27,6 +27,8 @@ jobs:
            mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - name: show files
         run: ls -a
+      - name: show jar
+        run: cd target&&ls -a
       - name: Output Docker info
         run: docker info
       - name: Sets build date
