@@ -1,3 +1,9 @@
+#环境配置
+docker run --name mysqlinstance -p 3306:3306 \
+-e MYSQL_ROOT_PASSWORD=123456 \
+--restart=always -d mysql:5.7.33
+数据库名称 db_carambola
+
 docker build . -t includeno/kanban_service:1.0
 
 docker pull includeno/kanban_service:1.0
